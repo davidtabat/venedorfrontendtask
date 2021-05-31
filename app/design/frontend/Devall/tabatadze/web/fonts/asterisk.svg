@@ -1,0 +1,7 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20">
+	<title>New Project</title>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<path fill="#7bae23" aria-label="*"  d="M12.51 7.83L12.99 8.65L10.01 10.26L12.99 11.88L12.51 12.69L9.72 11.01L9.72 14.14L8.78 14.14L8.78 11.01L5.99 12.69L5.51 11.88L8.49 10.26L5.51 8.65L5.99 7.83L8.78 9.51L8.78 6.38L9.72 6.38L9.72 9.51L12.51 7.83Z" />
+</svg>

@@ -1,0 +1,60 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+/** @var \Magento\Newsletter\Block\Subscribe $block */
+?>
+<div class="newsletter-wrapper">
+<div class="block newsletter">
+    <div class="newsletter-label">
+        <svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 40" width="50" height="40">
+            <title>Footer #3</title>
+            <defs>
+                <image  width="50" height="40" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAoCAMAAACLrFl+AAAAAXNSR0IB2cksfwAAAjpQTFRF////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////TouUkwAAAL50Uk5TAAgPSmgtDSRVh9Hr9pgBCylPmsn6/5ETL2eX1u1EFjtvp9j1ohIORnOy2/kbQoWz4vjxuRGGweP+4Kuu6mACUpPopeT8tByj+8hOQanzZQonZuX3zWsUz8IjBz2qfx8QivBsGDV75twwuigDIEh87p9degYdhL5QiM4icfJZPrcXwGTUOHQekAXneQQyN5XfJQlf/cOeP3i/2aFFGYumGkf0PGGwy3UV7L2taoHVlm5w0yw6jH5b0qxRQ7grnVZYk9sAAAKZSURBVHicY2AgBTAyMbOwkqCejZ2Dk4ubh5dI5Xz8AoJCwiKiQCBGlAZxCUkpaVEIkJElrF5OXkFRSVkUBlRUCahXU9fQ1BJFAtr4LdHR1dM3MASrFDEygmgxNsGtnl/Q1MzcAmq2pZW1DcQntnY41AvYO3A5asNd4yQp5ewCZrm6YVHNp8pu6y6s7AJX7+Hp5e3jC+X4YWrwDwgUCgpG9m5IaJhXOMyBEZGoyqPCom1jlAyRw0fUIDYuPiERxhNJQlZvl5ySapUmigrShVgZMjIRfOEsuPrsnNw843wPNA2OBd4MDIXpCIHgomKohhLB0jJzUXRg5FOezeBWoYwkVFkF0VBcHVGDoV6UJ7NWnIGhrh5ZzKUCakcDuntAoLFJB2hYoDSKYHMLVEu8D4aGytY2oERyez6KqEhFByzqTDQ6UWTMu1i7geI9mWjWp/Uiwjc7ow9hXn/7BJCGiZMs0ayeXICSutQKp0ASVP5U+SiQQE67CLprZaahJZTk6TNmck2ZNXsiOFq9NTFDxDobI3UVT0iZA2Hx2zZj6nCsxUyQCAvnGmHqEJ03H7cOVRUsGkRdmPlwa1mwEJuWRjWsivmY/IHkImcsOnwXYzefbcnSZcsZolhWYGpZicMnVcqiyqtku7u9FX3RdGivxuGTtkZRUYu0NUwM8xXWWqBoaczCroMhah1I2sI1mYEvYCqyRRbrcYVVdvVksIoNoHjOjUAUGhs34dLCsBmiags41cR1zYTqMNw6EaeWOAOwkm3dEG7dKkgy2I6nEmrYAVJREA/jM0qGgwTacZWpQBA1F+hVRTkkkYx1NaIG8rh1MNixeIhax6EIxe/07OvAoRwMdonuZkcXi6zCp4Nhz94MvPJYwEQ5wmoYGACAbLJZXihvBwAAAABJRU5ErkJggg=="/>
+            </defs>
+            <style>
+                tspan { white-space:pre }
+            </style>
+            <g id="Footer #3">
+                <g id="Newsletter #1">
+                    <use id="icon" href="#img1" x="0" y="0" />
+                </g>
+            </g>
+        </svg>
+        <div>
+            <h3>Sign up for our newsletter</h3>
+            <span class="subscribe-sale">and enjoy -15% off your first purchase!</span>
+        </div>
+    </div>
+    <div class="content">
+        <form class="form subscribe"
+            novalidate
+            action="<?= $block->escapeUrl($block->getFormActionUrl()) ?>"
+            method="post"
+            data-mage-init='{"validation": {"errorClass": "mage-error"}}'
+            id="newsletter-validate-detail">
+            <div class="field newsletter">
+                <div class="control">
+                    <label for="newsletter">
+                        <input name="email" type="email" id="newsletter"
+                               placeholder="<?= $block->escapeHtmlAttr(__('Enter your email...')) ?>"
+                               data-mage-init='{"mage/trim-input":{}}'
+                               data-validate="{required:true, 'validate-email':true}"
+                        />
+                    </label>
+                </div>
+            </div>
+            <div class="actions">
+                <button class="action subscribe primary"
+                        title="<?= $block->escapeHtmlAttr(__('Subscribe')) ?>"
+                        type="submit"
+                        aria-label="Subscribe">
+                    <span><?= $block->escapeHtml(__('Subscribe')) ?></span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+</div>

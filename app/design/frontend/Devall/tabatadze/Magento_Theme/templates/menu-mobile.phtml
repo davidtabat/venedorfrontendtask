@@ -1,0 +1,50 @@
+<div class="nav-icon-box">
+    <span class="nav-icon"></span>
+</div>
+<ul class="ui-menu ui-widget mobile">
+<li class="menu-0 level0 level-top category-item"><a id="menu-0" class="level-top" href="#">Mobile</a>
+    <ul class="menu-0 sub">
+        <li><a href="#">Furniture</a></li>
+        <li><a href="#">Electronics</a></li>
+        <li><a href="#">Gifts & flowers</a></li>
+        <li><a href="#">Books & stationery</a></li>
+        <li><a href="#">Music</a></li>
+        <li><a href="#">Sport & tourism</a></li>
+    </ul>
+</li>
+<li class="menu-1 level0 level-top category-item" ><a id="menu-1" class="level-top" href="#">Cameras</a>
+    <ul class="menu-1 sub">
+        <li><a href="#">Sample</a></li>
+    </ul>
+</li>
+<li class="menu-2 level0 level-top category-item" ><a id="menu-2" class="level-top" href="#">Televisions</a>
+    <ul class="menu-2 sub">
+        <li><a href="#">Sample</a></li>
+    </ul>
+</li>
+<li class="menu-3 level0 level-top category-item" ><a id="menu-3" class="level-top" href="#">Computing</a>
+    <ul class="menu-3 sub">
+        <li><a href="#">Sample</a></li>
+    </ul>
+</li>
+<li class="menu-4 level0 level-top category-item" ><a id="menu-4" class="level-top" href="#">Home Appliances</a>
+    <ul class="menu-4 sub">
+        <li><a href="#">Sample</a></li>
+    </ul>
+</li>
+</ul>
+<script>
+    require(['jquery','jquery/ui'],function($){
+        $(document).ready(function (){
+            $(".level0").on('click', function (event) {
+                elementId = event.target.id;
+                $(`.${elementId}.sub`).toggle();
+                $(`.${elementId}`).toggleClass("active");
+            });
+            $(".nav-icon-box").on('click', function () {
+                $(".ui-menu.ui-widget.mobile").toggle();
+                $(".nav-icon-box").toggleClass("active");
+            });
+        });
+    });
+</script>

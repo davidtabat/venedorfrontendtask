@@ -1,0 +1,39 @@
+    // /**
+//  * Copyright © Magento, Inc. All rights reserved.
+//  * See COPYING.txt for license details.
+//  */
+
+& when (@media-common = true) {
+    //noinspection LessResolvedByNameOnly
+    .lib-font-face(
+        @family-name: @icons__font-name,
+        @font-path: @icons__font-path,
+        @font-weight: normal,
+        @font-style: normal
+    );
+    //noinspection LessResolvedByNameOnly
+    & when (@media-common = true) {
+        @font-face {
+            font-family: 'icomoon';
+            src:  url('@{baseDir}fonts/icomoon.eot?6xdv1n');
+            src:  url('@{baseDir}fonts/icomoon.eot?6xdv1n#iefix') format('embedded-opentype'),
+            url('@{baseDir}fonts/icomoon.ttf?6xdv1n') format('truetype'),
+            url('@{baseDir}fonts/icomoon.woff?6xdv1n') format('woff'),
+            url('@{baseDir}fonts/icomoon.svg?6xdv1n#icomoon') format('svg');
+            font-weight: normal;
+            font-style: normal;
+            font-display: block;
+        }
+        @font-face {
+            font-family: 'arrows';
+            src:  url('@{baseDir}fonts/arrows.eot?ulxtkp');
+            src:  url('@{baseDir}fonts/arrows.eot?ulxtkp#iefix') format('embedded-opentype'),
+            url('@{baseDir}fonts/arrows.ttf?ulxtkp') format('truetype'),
+            url('@{baseDir}fonts/arrows.woff?ulxtkp') format('woff'),
+            url('@{baseDir}fonts/arrows.svg?ulxtkp#arrows') format('svg');
+            font-weight: normal;
+            font-style: normal;
+            font-display: block;
+        }
+    }
+}
