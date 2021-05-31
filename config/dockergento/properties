@@ -1,0 +1,4 @@
+MAGENTO_DIR="."
+COMPOSER_DIR="."
+BIN_DIR="."
+COMPOSE_PROJECT_NAME="devall_tabatadze"
